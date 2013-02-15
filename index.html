@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Mansions of Madness</title>
+		<link rel="shortcut icon" href="Cthulhu.png"/>
+		<style type="text/css">
+			@font-face { font-family: CarbonType; src: url( 'Carbon.ttf' ); }
+			@font-face { font-family: Bleeding Cowboys; src: url( 'BleedingCowboys.ttf' ); }
+
+			.title { font-family: Bleeding Cowboys; font-variant: small-caps; font-size: 150%; }
+			.carbon { font-family: CarbonType, Courier New; }
+			.highlight { color: #ffffff !important; }
+			.text { font-family: serif; }
+			.test { font-family: Bleeding Cowboys, serif; }
+			.flavour { font-family: serif; font-style: italic; color: #888888; }
+			.passFail { font-family: CarbonType, Courier New; }
+
+			.window { width: 480px; margin: auto; font-size: 75% }
+			.footer { font-family: CarbonType; text-align: center; padding-bottom: 10px; width: 100%; position: fixed; left: 0px; bottom: 0px; }
+
+			a:link { text-decoration: none; color: #888888; }
+			a:visited { text-decoration: none; color: #888888; }
+			a:hover { text-decoration: none; color: #ffffff; }
+			a:active { text-decoration: none; color: #888888; }
+
+			body { color: #ffffff; background-color: #000000; overflow-y:auto; }
+			html { overflow-x: auto; overflow-y: hidden; }
+			* html .footer { position: absolute; }
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="JQuery.js"></script>
+		<script type="text/javascript" src="Cards.js"></script>
+		<script type="text/javascript" src="Logic.js"></script>
+
+		<div class="window">
+			<div id="menu" class="carbon" style="text-align: center;">
+				<a id="combat" href="">Combat</a> /
+				<a id="spell" href="">Spell</a> /
+				<a id="event" href="">Event</a> /
+				<a id="attribute" href="">Attribute</a>
+			</div>
+
+			<div class="title" style="text-align: center; font-size: 200%;">Mansions of</div>
+			<div class="title" style="text-align: center; font-size: 300%; position: relative; top: -42px">Madness</div>
+
+			<div><br/></div>
+
+			<div class="carbon" style="text-align: center; position: relative; top: -50px;">
+				<div id="combatMenu">
+					<div>Deck</div>
+					<span id="combatDeck">
+						<a id="humanoid" href="">Humanoid</a> /
+						<a id="beast" href="">Beast</a> /
+						<a id="eldritch" href="">Eldritch</a>
+					</span>
+					<div><br/></div>
+					<div id="attack">
+						<div>Investigator Attack</div>
+						<a id="unarmed" href="">No Weapon</a> /
+						<a id="blunt" href="">Blunt Melee</a> /
+						<a id="sharp" href="">Sharp Melee</a> /
+						<a id="ranged" href="">Ranged</a>
+						<div><br/></div>
+						<div>Monster Attack</div>
+						<a id="monster" href="">Investigator</a> /
+						<a id="barrier" href="">Barrier</a> /
+						<a id="hiding" href="">Hiding</a>
+					</div>
+				</div>
+				<div id="spellMenu">
+					<span id="spellDeck">
+						<a id="soul" href="">Soul Pact</a> /
+						<a id="blood" href="">Blood Pact</a> /
+						<a id="shriveling" href="">Shriveling</a> /
+						<a id="bind" href="">Bind Monster</a>
+					</span>
+					<div><br/></div>
+					<div id="spellCard"></div>
+					<div><br/></div>
+					<a id="cast" href="">Cast Spell</a>
+				</div>
+				<div id="eventMenu">
+					<span id="eventDeck">
+						<a id="fall" href="">The Fall of House Lynch</a> /
+						<a id="ties" href="">Blood Ties</a> /
+						<a id="classroom" href="">Classroom Curses</a> /
+						<a id="sanctum" href="">The Inner Sanctum</a> /
+						<a id="green" href="">Green-eyed Boy</a>
+					</span>
+					<div><br/></div>
+					<a id="proceed" href="">Time Passes</a>
+				</div>
+
+				<div><br/></div>
+
+				<div id="card"></div>
+
+				<div class="footer">
+					<div id="attributeRoll" class="title" style="font-size: 500%;"></div>
+					<a id="shuffle" href="">Shuffle</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
