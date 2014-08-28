@@ -19,7 +19,7 @@ None.
 Mansions of Madness
 ===================
 
-More information about Mansions of Madness can be found at [Board Game Geek](http://boardgamegeek.com/boardgame/83330/mansions-madness) or on the (offical website)[http://www.fantasyflightgames.com/edge_minisite.asp?eidm=136].
+More information about Mansions of Madness can be found at [Board Game Geek](http://boardgamegeek.com/boardgame/83330/mansions-madness) or on the [offical website](http://www.fantasyflightgames.com/edge_minisite.asp?eidm=136).
 
 License Information
 ===================
